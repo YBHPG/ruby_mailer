@@ -1,0 +1,15 @@
+<h1>Все письма</h1>
+<%= link_to 'Назад', emails_path %>
+
+<div class="wrapper">
+  <div class="content">
+    <% @emails.each do |email| %>
+      <div class="card">
+        <p>Отправитель: <%= email.sender %></p>
+        <p>Получатель: <%= email.recipient %></p>
+        <p>Тема: <%= email.subject %></p>
+        <!-- <%= button_to 'Просмотреть', emails_path(email) %> -->
+      </div>
+    <% end  %>
+  </div>
+</div>

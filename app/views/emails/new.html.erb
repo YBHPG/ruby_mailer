@@ -1,0 +1,15 @@
+<h1>Все письма</h1>
+<%= link_to 'Назад', emails_path %>
+
+<%= form_with model: @email do |form| %>
+  <p><%= form.label :sender, 'Адрес отправителя' %></p>
+  <p><%= form.text_field :sender, type: "email" %></p>
+  <p><%= form.label :recipient, 'Адрес получателя' %></p>
+  <p><%= form.text_field :recipient, type: "email" %></p>
+  <p><%= form.label :subject, 'Тема' %></p>
+  <p><%= form.text_field :subject %></p>
+  <p><%= form.label :body, 'Текст письма' %></p>
+  <p><%= form.text_area :body, rows: 5%></p>
+  <p><%= form.submit "Отправить" %></p>
+
+<% end %>

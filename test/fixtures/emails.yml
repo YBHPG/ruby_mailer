@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sender: MyString
+  recipient: MyString
+  subject: MyText
+  time: 2022-07-03 16:57:30
+  body: MyText
+
+two:
+  sender: MyString
+  recipient: MyString
+  subject: MyText
+  time: 2022-07-03 16:57:30
+  body: MyText
